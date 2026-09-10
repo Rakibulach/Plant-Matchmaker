@@ -1,0 +1,58 @@
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+.nav-link {
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: green !important;
+}
+
+.plant-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    background: #198754;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+body {
+    background: #f8f9fa;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+.card img {
+    height: 250px;
+    object-fit: cover;
+}

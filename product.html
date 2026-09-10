@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Plant Store</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="logo" src="logo.avif" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="product.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Product Section -->
+    <section class="container my-5">
+
+        <h2 class="text-center mb-4">Monstera Deliciosa</h2>
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <img src="product1.jpg" class="img-fluid rounded">
+
+            </div>
+
+            <div class="col-md-6">
+
+                <h4>Product Details</h4>
+
+                <p><strong>Plant Size:</strong></p>
+
+                <select class="form-select mb-3">
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+
+                <p><strong>Light Requirement:</strong> Bright Indirect Light</p>
+
+                <p><strong>Watering:</strong> Water Once a Week</p>
+
+                <p><strong>Toxicity:</strong> Toxic to Cats and Dogs</p>
+
+                <p><strong>Repotting:</strong> Every 1-2 Years</p>
+
+                <hr>
+
+                <h5>Add-ons</h5>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="pot">
+                    <label class="form-check-label">
+                        Plant Pot
+                    </label>
+                </div>
+
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="stand">
+                    <label class="form-check-label">
+                        Plant Stand
+                    </label>
+                </div>
+
+                <button class="btn btn-success" onclick="addToCart()">
+                    Add To Cart
+                </button>
+
+                <p class="mt-3" id="cartResult"></p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Video Section -->
+
+    <section class="container my-5">
+
+        <h2 class="text-center mb-4">
+            Monstera Growth & Care Video
+        </h2>
+
+        <div class="ratio ratio-16x9">
+
+            <iframe src="https://www.youtube.com/embed/vyakc_MHZ4M?si=znsHd_MHBBiJjrP9" title="Plant Video"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </section>
+
+    <!-- Plant Parent Tips -->
+
+    <section class="container my-5">
+
+        <h2 class="text-center mb-4">
+            Plant Parent Tips
+        </h2>
+
+        <div class="card p-4">
+
+            <label class="form-label">
+                Share Your Experience
+            </label>
+
+            <textarea class="form-control mb-3" rows="4" id="tips">
+        </textarea>
+
+            <label class="form-label">
+                Upload Plant Photo
+            </label>
+
+            <input type="file" class="form-control mb-3" id="photo">
+
+            <button class="btn btn-success" onclick="shareTips()">
+
+                Share
+
+            </button>
+
+            <p class="mt-3" id="tipsResult">
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p class="mb-0">
+            © 2026 Blooming Oasis. All Rights Reserved.
+        </p>
+
+    </footer>
+</body>
+
+</html>
